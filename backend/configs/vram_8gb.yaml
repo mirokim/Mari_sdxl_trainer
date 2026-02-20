@@ -1,0 +1,14 @@
+description: "8GB VRAM (RTX 3060 8GB, RTX 4060 등)"
+training_mode: lora
+mixed_precision: fp16
+gradient_checkpointing: true
+cache_latents: true
+cache_text_encoder_outputs: true
+train_batch_size: 1
+gradient_accumulation_steps: 1
+enable_xformers: true
+lora_rank: 16
+lora_alpha: 8
+train_text_encoder: false
+optimizer_type: AdamW8bit
+resolution: 1024

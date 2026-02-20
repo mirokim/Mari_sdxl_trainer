@@ -1,0 +1,14 @@
+description: "24GB+ VRAM (RTX 3090, RTX 4090, A5000 등)"
+training_mode: lora
+mixed_precision: bf16
+gradient_checkpointing: false
+cache_latents: true
+cache_text_encoder_outputs: false
+train_batch_size: 2
+gradient_accumulation_steps: 4
+enable_xformers: true
+lora_rank: 64
+lora_alpha: 32
+train_text_encoder: true
+optimizer_type: Prodigy
+resolution: 1024

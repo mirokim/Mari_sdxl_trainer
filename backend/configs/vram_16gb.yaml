@@ -1,0 +1,14 @@
+description: "16GB VRAM (RTX 4060 Ti 16GB, RTX 4080 등)"
+training_mode: lora
+mixed_precision: bf16
+gradient_checkpointing: true
+cache_latents: true
+cache_text_encoder_outputs: false
+train_batch_size: 1
+gradient_accumulation_steps: 4
+enable_xformers: true
+lora_rank: 32
+lora_alpha: 16
+train_text_encoder: true
+optimizer_type: AdamW8bit
+resolution: 1024

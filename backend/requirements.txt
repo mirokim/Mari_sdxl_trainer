@@ -1,0 +1,38 @@
+# Core ML
+torch>=2.1.0
+torchvision>=0.16.0
+
+# Diffusion model training
+diffusers>=0.28.0
+transformers>=4.38.0
+accelerate>=0.25.0
+peft>=0.8.0
+safetensors>=0.4.0
+
+# Optimizers
+bitsandbytes>=0.43.0
+prodigyopt>=1.0
+
+# Memory optimization
+xformers>=0.0.23
+
+# Web framework
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+websockets>=12.0
+python-multipart>=0.0.6
+
+# Image processing
+Pillow>=10.0.0
+opencv-python>=4.8.0
+
+# Configuration
+PyYAML>=6.0
+
+# Utilities
+tqdm>=4.66.0
+matplotlib>=3.8.0
+numpy>=1.24.0
+
+# Windows
+colorama>=0.4.6
