@@ -8,7 +8,7 @@ def get_gpu_info() -> Optional[dict]:
         return None
 
     gpu = torch.cuda.get_device_properties(0)
-    total_vram = gpu.total_mem / (1024 ** 3)
+    total_vram = gpu.total_memory / (1024 ** 3)
     allocated = torch.cuda.memory_allocated(0) / (1024 ** 3)
     reserved = torch.cuda.memory_reserved(0) / (1024 ** 3)
     free_vram = total_vram - allocated
